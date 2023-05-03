@@ -39,7 +39,7 @@ The goal of this project is to create a visually appealing portfolio that showca
 </details>
 
 <details>
-  <summary>CSS3</summary>
+  <summary>Client</summary>
   <ul>
     <li><a href="#">CSS3</a></li>
   </ul>
