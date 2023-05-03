@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #E5E5E5;
+  padding: 12px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 18px;
+  color: #6070FF;
+  text-decoration: none;
+}
+.header i {
+  color: #6070FF;
+}
