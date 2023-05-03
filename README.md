@@ -45,8 +45,6 @@ The goal of this project is to create a visually appealing portfolio that showca
   </ul>
 </details>
 
-<details>
-
 ### Key Features <a name="key-features"></a>
 
 - **[Responsive Design]**
