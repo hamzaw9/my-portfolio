@@ -18,7 +18,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 14px;
   padding: 20px;
 }
 
@@ -29,7 +28,7 @@ body {
   text-decoration: none;
 }
 
-section {
+.main {
   background: url(images/main-background.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -39,24 +38,24 @@ section {
   justify-content: center;
   gap: 8px;
   height: 100vh;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
-section h1 {
+.main h1 {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
 }
 
-section p {
+.main p {
   color: #344563;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-section h4 {
+.main h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
