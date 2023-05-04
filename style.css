@@ -10,7 +10,6 @@ body {
 }
 
 .wrapper {
-  padding: 20px;
   background: #fff;
   border-bottom-left-radius: 60px;
 }
@@ -20,6 +19,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 14px;
+  padding: 20px;
 }
 
 .header a {
@@ -39,6 +39,7 @@ section {
   justify-content: center;
   gap: 8px;
   height: 100vh;
+  padding: 20px;
 }
 
 section h1 {
