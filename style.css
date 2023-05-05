@@ -12,7 +12,10 @@ body {
 .wrapper {
   background: #fff;
   border-bottom-left-radius: 60px;
+  margin-bottom: 100px;
 }
+
+/** Start: header Section **/
 
 .header {
   display: flex;
@@ -27,6 +30,10 @@ body {
   color: #6070ff;
   text-decoration: none;
 }
+
+/** End: header Section **/
+
+/** Start: main Section **/
 
 .main {
   background: url(images/main-background.svg);
@@ -48,21 +55,23 @@ body {
   line-height: 52px;
 }
 
-.main p {
+.main,
+.about-myself p {        /** main and about section p tag have same style **/
   color: #344563;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.main h3 {
+.main,
+.about-myself h3 {     /** main and about section h3 tag have same style **/
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
 
-ul {
+.social-media {
   margin: 0;
   padding: 0;
   display: flex;
@@ -76,3 +85,135 @@ ul {
 .social-media a {
   text-decoration: none;
 }
+
+/** End: main Section **/
+
+/** Start: Work Section **/
+
+.work-history {
+  display: grid;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 12px;
+  margin-bottom: 100px;
+}
+
+.card h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card p {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.card strong {
+  color: #344563;
+}
+
+.card i {
+  color: #c1c7d0;
+  margin: 0 4px;
+}
+
+.card p.detail {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+}
+
+.card ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card li {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #6070ff;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.project-details-btn,
+.get-resume-btn {   /** work & about section input type="button" same style **/
+  display: flex;
+}
+
+.get-resume-btn input,
+.project-details-btn input {
+  padding: 12px;
+  background: #fff;
+  border: 2px solid #396df2;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #396df2;
+  cursor: pointer;
+}
+
+/** End: Work Section **/
+
+/** Start: About Section **/
+
+.about-myself {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 100px 20px;
+  border-top-right-radius: 60px;
+}
+
+.about-myself h2 {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.my-skills ul {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.language-items li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  background: #f7f7f9;
+  border-radius: 8px;
+  padding-right: 150px;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+/** End: About Section **/
