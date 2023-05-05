@@ -162,9 +162,9 @@ Your working browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Projects details]**
-- [ ] **[Grid Implementation]**
-- [ ] **[About myself section]**
+- [ ] **[JavaScript Implementation]**
+- [ ] **[Desktop version]**
+- [ ] **[Contact form]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
