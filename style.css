@@ -172,6 +172,19 @@ body {
   cursor: pointer;
 }
 
+.get-resume-btn input:hover,
+.project-details-btn input:hover {
+  color: #fff;
+  background: #396df2;
+  transition-duration: 0.4s;
+}
+
+.get-resume-btn input:focus,
+.project-details-btn input:focus {
+  color: #fff;
+  background: #2230d2;
+}
+
 /** End: Work Section **/
 
 /** Start: About Section **/
