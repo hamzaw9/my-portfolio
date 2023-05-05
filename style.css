@@ -179,10 +179,11 @@ body {
   transition-duration: 0.4s;
 }
 
-.get-resume-btn input:focus,
-.project-details-btn input:focus {
+.get-resume-btn input:active,
+.project-details-btn input:active {
   color: #fff;
   background: #2230d2;
+  transition-duration: 0.4s;
 }
 
 /** End: Work Section **/
