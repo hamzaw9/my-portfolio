@@ -256,7 +256,6 @@ body {
   justify-content: center;
   margin-top: 103px;
   color: #fff;
-  
 }
 
 .form-description h2 {
@@ -328,4 +327,5 @@ fieldset button:active {
   margin-bottom: 8px;
   align-self: center;
 }
+
 /** End: Contact Form **/
