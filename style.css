@@ -246,7 +246,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0 24px;
-  gap: 52px;
   border-top-left-radius: 60px;
 }
 
@@ -257,6 +256,7 @@ body {
   justify-content: center;
   margin-top: 103px;
   color: #fff;
+  
 }
 
 .form-description h2 {
@@ -271,6 +271,11 @@ body {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
+}
+
+.form-wrapper form {
+  margin-top: 52px;
+  margin-bottom: 32px;
 }
 
 fieldset {
@@ -315,4 +320,12 @@ fieldset button:active {
   transition-duration: 0.4s;
 }
 
+.form-wrapper .finish-line {
+  width: 134px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: #0d151e;
+  margin-bottom: 8px;
+  align-self: center;
+}
 /** End: Contact Form **/
