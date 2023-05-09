@@ -23,7 +23,7 @@
 - [📝 License](#license)
 
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 The goal of this project is to create a visually appealing portfolio that showcases my future projects. The portfolio will feature detailed information about each project, including live demos, screenshots, technologies used, and code snippets. In addition to viewing my work, visitors will be able to contact me through a contact form and connect with me via social media links. Overall, the portfolio will serve as a professional showcase of my skills and experience, highlighting my ability to develop high-quality projects.
 
@@ -47,9 +47,9 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 ### Key Features <a name="key-features"></a>
 
-- **[Responsive Design]**
-- **[Linters Error Free]**
-- **[Code Quality]**
+- **Responsive Design**
+- **Linters Error Free**
+- **Code Quality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +148,6 @@ Your working browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors">Hamza Baig</a>
 
@@ -162,9 +161,9 @@ Your working browser.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[JavaScript Implementation]**
-- [ ] **[Desktop version]**
-- [ ] **[Contact form]**
+- [ ] **JavaScript Implementation**
+- [ ] **Desktop version**
+- [ ] **Contact form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
