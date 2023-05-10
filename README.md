@@ -124,7 +124,7 @@ StyleLint run:
 To run the project, execute the following command:
 
 ```sh
-  cd linters-setup
+  cd my-portfolio
   index.html
 ```
 
