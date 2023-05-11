@@ -118,37 +118,48 @@ nav ul {
   margin-bottom: 100px;
 }
 
-.card h3 {
+.card img {
+  max-width: 100%;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 34px;
+}
+
+.card-inner h2 {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   color: #172b4d;
 }
 
-.card p {
+.card-inner p {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
   color: #7a869a;
 }
 
-.card strong {
+.card-inner strong {
   color: #344563;
 }
 
-.card i {
+.card-inner i {
   color: #c1c7d0;
   margin: 0 4px;
 }
 
-.card p.detail {
+.card-inner p.detail {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
 }
 
-.card ul {
+.card-inner ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -156,7 +167,7 @@ nav ul {
   gap: 6px;
 }
 
-.card li {
+.card-inner li {
   list-style-type: none;
   font-size: 12px;
   font-weight: 500;
@@ -198,6 +209,7 @@ nav ul {
 .project-details-btn input:active {
   color: #fff;
   background: #2230d2;
+  border: 2px solid #2230d2;
   transition-duration: 0.4s;
 }
 
@@ -351,7 +363,8 @@ fieldset button:active {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 80%;
+    max-width: 100%;
+    width: 1130px;
     margin: 0 auto;
   }
 
@@ -400,8 +413,8 @@ fieldset button:active {
 
   .main-section {
     margin: 0 auto;
-    width: 65%;
-    padding: 289px 0 255px 0;
+    width: 63%;
+    padding: 260px 0;
     gap: 12px;
     height: auto;
   }
@@ -425,4 +438,46 @@ fieldset button:active {
   .main-section h1 span {
     display: block;
   }
+
+  /** End: Desktop Main section **/
+
+  /** Start: Desktop Work section **/
+
+  .work-history {
+    grid-row-gap: 142px;
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card-inner {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .card-inner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .card-inner p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-inner p.detail {
+    font-size: 16px;
+  }
+
+  /** End: Desktop Work section **/
 }
