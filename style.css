@@ -44,6 +44,9 @@ nav ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +60,7 @@ nav ul {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  padding-right: 27px;
 }
 
 /** main and about section p tag have same style **/
@@ -84,6 +88,7 @@ nav ul {
   padding: 0;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .social-media li {
@@ -346,13 +351,14 @@ fieldset button:active {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 88%;
+    width: 80%;
     margin: 0 auto;
   }
 
   .header {
     padding: 25px 0;
   }
+
   .header i {
     display: none;
   }
@@ -382,4 +388,41 @@ fieldset button:active {
   }
 
   /** End: Desktop header section **/
+
+  /** Start: Desktop Main section **/
+
+  .main {
+    background-image: url(images/main-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .main-section {
+    margin: 0 auto;
+    width: 65%;
+    padding: 289px 0 255px 0;
+    gap: 12px;
+    height: auto;
+  }
+
+  .main-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .main-section p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .main-section h1 {
+    padding: 0;
+    letter-spacing: 0.37px;
+    white-space: pre-wrap;
+  }
+  .main-section h1 span {
+    display: block;
+  }
 }
