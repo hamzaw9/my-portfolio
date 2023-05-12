@@ -123,15 +123,15 @@ nav ul {
   transition: transform 0.5s linear;
 }
 
+.card img:hover {
+  transform: scale(1.01);
+}
+
 .card-inner {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-right: 34px;
-}
-
-.card img:hover {
-  transform: scale(1.01);
 }
 
 .card-inner h2 {
@@ -201,13 +201,15 @@ nav ul {
   line-height: 24px;
   color: #396df2;
   cursor: pointer;
+  transition: color 1s, background-color 1s, padding-left 1s, padding-right 1s;
 }
 
 .get-resume-btn input:hover,
 .project-details-btn input:hover {
   color: #fff;
   background: #396df2;
-  transition: 0.5s;
+  padding-left: 6px;
+  padding-right: 18px;
 }
 
 .get-resume-btn input:active,
