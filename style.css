@@ -5,14 +5,14 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #e5e5e5;
 }
 
 .wrapper {
   background: #fff;
   border-bottom-left-radius: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 114px;
 }
 
 /** Start: header Section **/
@@ -24,11 +24,15 @@ body {
   padding: 20px;
 }
 
-.header a {
+.header .logo {
   font-weight: 700;
   font-size: 18px;
   color: #6070ff;
   text-decoration: none;
+}
+
+nav ul {
+  display: none;
 }
 
 /** End: header Section **/
@@ -40,6 +44,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,18 +60,23 @@ body {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  padding-right: 27px;
 }
 
+/** main and about section p tag have same style **/
+
 .main p,
-.about-myself p {        /** main and about section p tag have same style **/
+.about p {
   color: #344563;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
+/** main and about section h3 tag have same style **/
+
 .main h3,
-.about-myself h3 {     /** main and about section h3 tag have same style **/
+.about h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -76,6 +88,7 @@ body {
   padding: 0;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .social-media li {
@@ -105,37 +118,48 @@ body {
   margin-bottom: 100px;
 }
 
-.card h3 {
+.card img {
+  max-width: 100%;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 34px;
+}
+
+.card-inner h2 {
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   color: #172b4d;
 }
 
-.card p {
+.card-inner p {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
   color: #7a869a;
 }
 
-.card strong {
+.card-inner strong {
   color: #344563;
 }
 
-.card i {
+.card-inner i {
   color: #c1c7d0;
   margin: 0 4px;
 }
 
-.card p.detail {
+.card-inner p.detail {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   color: #344563;
 }
 
-.card ul {
+.card-inner ul {
   margin: 0;
   padding: 0;
   display: flex;
@@ -143,7 +167,7 @@ body {
   gap: 6px;
 }
 
-.card li {
+.card-inner li {
   list-style-type: none;
   font-size: 12px;
   font-weight: 500;
@@ -154,8 +178,10 @@ body {
   border-radius: 8px;
 }
 
+/** work & about section input type="button" same style **/
+
 .project-details-btn,
-.get-resume-btn {   /** work & about section input type="button" same style **/
+.get-resume-btn {
   display: flex;
 }
 
@@ -183,6 +209,7 @@ body {
 .project-details-btn input:active {
   color: #fff;
   background: #2230d2;
+  border: 2px solid #2230d2;
   transition-duration: 0.4s;
 }
 
@@ -190,7 +217,7 @@ body {
 
 /** Start: About Section **/
 
-.about-myself {
+.about {
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -200,26 +227,34 @@ body {
   border-top-right-radius: 60px;
 }
 
-.about-myself h2 {
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-left h2 {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
 }
 
-.my-skills ul {
+.about-right > ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.skill-type {
+.skills {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin-top: 8px;
 }
 
-.language-items li {
+.skills li {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -309,7 +344,8 @@ fieldset button {
 
 fieldset button:hover {
   color: #fff;
-  background: #396df2;
+  background: #839ad3;
+  cursor: pointer;
   transition-duration: 0.4s;
 }
 
@@ -329,3 +365,184 @@ fieldset button:active {
 }
 
 /** End: Contact Form **/
+
+/*****     Media Queries     *****/
+
+/** Start: Desktop header section **/
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 114px;
+    border-bottom-left-radius: 120px;
+  }
+
+  .container {
+    max-width: 100%;
+    width: 1130px;
+    margin: 0 auto;
+  }
+
+  .header {
+    padding: 25px 0;
+  }
+
+  .header i {
+    display: none;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+  }
+
+  nav li {
+    list-style-type: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 8px;
+  }
+
+  nav a:hover {
+    color: #6070ff;
+  }
+
+  /** End: Desktop header section **/
+
+  /** Start: Desktop Main section **/
+
+  .main {
+    background-image: url(images/main-bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .main-section {
+    margin: 0 auto;
+    width: 63%;
+    padding: 260px 0;
+    gap: 12px;
+    height: auto;
+  }
+
+  .main-section h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .main-section p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .main-section h1 span {
+    display: block;
+  }
+
+  /** End: Desktop Main section **/
+
+  /** Start: Desktop Work section **/
+
+  .work-history {
+    grid-row-gap: 142px;
+    padding: 24px;
+  }
+
+  .card {
+    flex-direction: row;
+  }
+
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .card-inner {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .card-inner h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .card-inner p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .card-inner p.detail {
+    font-size: 16px;
+  }
+
+  /** End: Desktop Work section **/
+
+  /** Start: Desktop About section **/
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 142px;
+    border-top-right-radius: 120px;
+    justify-content: flex-start;
+  }
+
+  .about-right > ul {
+    gap: 0;
+  }
+
+  .about-left {
+    flex-basis: 41%;
+  }
+
+  .about-right {
+    flex-basis: 59%;
+  }
+
+  .skills-inner ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  .skills-inner li {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  /** End: Desktop About section **/
+
+  /** Start: Desktop Contact form section **/
+
+  .form-wrapper {
+    border-top-left-radius: 120px;
+    background-image: url(images/desktop-contact-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 142px 400px 127px 400px;
+  }
+
+  .finish-line {
+    display: none;
+  }
+
+  fieldset button {
+    margin: 0 auto;
+  }
+
+  /** End: Desktop Contact form section **/
+}

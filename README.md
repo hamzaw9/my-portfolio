@@ -22,7 +22,6 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-
 # 📖 Portfolio <a name="about-project"></a>
 
 The goal of this project is to create a visually appealing portfolio that showcases my future projects. The portfolio will feature detailed information about each project, including live demos, screenshots, technologies used, and code snippets. In addition to viewing my work, visitors will be able to contact me through a contact form and connect with me via social media links. Overall, the portfolio will serve as a professional showcase of my skills and experience, highlighting my ability to develop high-quality projects.
@@ -95,7 +94,7 @@ Example commands:
   git clone https://github.com/hamzaw9/my-portfolio
 ```
 
- ### Install
+### Install
 
 Install this project with:
 
@@ -124,7 +123,7 @@ StyleLint run:
 To run the project, execute the following command:
 
 ```sh
-  cd linters-setup
+  cd my-portfolio
   index.html
 ```
 
@@ -145,9 +144,7 @@ You can deploy this project using:
 
 Your working browser.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors">Hamza Baig</a>
 
@@ -167,7 +164,7 @@ Your working browser.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
- ## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
@@ -177,8 +174,14 @@ Feel free to check the [issues page](https://github.com/hamzaw9/my-portfolio/iss
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you find this project useful and informative, please consider giving it a star. Your support and feedback are greatly appreciated and will motivate me to continue creating high-quality projects in the future. 
-  
+If you find this project useful and informative, please consider giving it a star. Your support and feedback are greatly appreciated and will motivate me to continue creating high-quality projects in the future.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank **Microverse**.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
