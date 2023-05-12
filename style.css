@@ -232,6 +232,7 @@ nav ul {
   flex-direction: column;
   gap: 12px;
 }
+
 .about-left h2 {
   color: #172b4d;
   font-weight: 700;
@@ -443,11 +444,7 @@ fieldset button:active {
     font-size: 20px;
     line-height: 28px;
   }
-  .main-section h1 {
-    padding: 0;
-    letter-spacing: 0.37px;
-    white-space: pre-wrap;
-  }
+
   .main-section h1 span {
     display: block;
   }
@@ -493,7 +490,7 @@ fieldset button:active {
 
   /** End: Desktop Work section **/
 
-  /** Start: About section **/
+  /** Start: Desktop About section **/
 
   .about {
     display: flex;
@@ -526,9 +523,9 @@ fieldset button:active {
     padding: 12px;
   }
 
-  /** End: About section **/
+  /** End: Desktop About section **/
 
-  /** Start: Contact form section **/
+  /** Start: Desktop Contact form section **/
 
   .form-wrapper {
     border-top-left-radius: 120px;
@@ -547,5 +544,5 @@ fieldset button:active {
     margin: 0 auto;
   }
 
-  /** End: Contact form section **/
+  /** End: Desktop Contact form section **/
 }
