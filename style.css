@@ -343,7 +343,8 @@ fieldset button {
 
 fieldset button:hover {
   color: #fff;
-  background: #396df2;
+  background: #839ad3;
+  cursor: pointer;
   transition-duration: 0.4s;
 }
 
@@ -526,4 +527,25 @@ fieldset button:active {
   }
 
   /** End: About section **/
+
+  /** Start: Contact form section **/
+
+  .form-wrapper {
+    border-top-left-radius: 120px;
+    background-image: url(images/desktop-contact-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 142px 400px 127px 400px;
+  }
+
+  .finish-line {
+    display: none;
+  }
+
+  fieldset button {
+    margin: 0 auto;
+  }
+
+  /** End: Contact form section **/
 }
