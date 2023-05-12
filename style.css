@@ -12,7 +12,7 @@ body {
 .wrapper {
   background: #fff;
   border-bottom-left-radius: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 114px;
 }
 
 /** Start: header Section **/
@@ -66,7 +66,7 @@ nav ul {
 /** main and about section p tag have same style **/
 
 .main p,
-.about-myself p {
+.about p {
   color: #344563;
   font-weight: 400;
   font-size: 16px;
@@ -76,7 +76,7 @@ nav ul {
 /** main and about section h3 tag have same style **/
 
 .main h3,
-.about-myself h3 {
+.about h3 {
   color: #7f8cff;
   font-weight: 500;
   font-size: 16px;
@@ -217,7 +217,7 @@ nav ul {
 
 /** Start: About Section **/
 
-.about-myself {
+.about {
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -227,26 +227,33 @@ nav ul {
   border-top-right-radius: 60px;
 }
 
-.about-myself h2 {
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about-left h2 {
   color: #172b4d;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
 }
 
-.my-skills ul {
+.about-right > ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.skill-type {
+.skills {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  margin-top: 8px;
 }
 
-.language-items li {
+.skills li {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -362,6 +369,11 @@ fieldset button:active {
 /** Start: Desktop header section **/
 
 @media only screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 114px;
+    border-bottom-left-radius: 120px;
+  }
+
   .container {
     max-width: 100%;
     width: 1130px;
@@ -445,7 +457,6 @@ fieldset button:active {
 
   .work-history {
     grid-row-gap: 142px;
-    border-radius: 24px;
     padding: 24px;
   }
 
@@ -480,4 +491,39 @@ fieldset button:active {
   }
 
   /** End: Desktop Work section **/
+
+  /** Start: About section **/
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 142px;
+    border-top-right-radius: 120px;
+    justify-content: flex-start;
+  }
+
+  .about-right > ul {
+    gap: 0;
+  }
+
+  .about-left {
+    flex-basis: 41%;
+  }
+
+  .about-right {
+    flex-basis: 59%;
+  }
+
+  .skills-inner ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  .skills-inner li {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  /** End: About section **/
 }
