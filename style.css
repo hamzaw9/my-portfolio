@@ -120,6 +120,11 @@ nav ul {
 
 .card img {
   max-width: 100%;
+  transition: transform 0.5s linear;
+}
+
+.card img:hover {
+  transform: scale(1.01);
 }
 
 .card-inner {
@@ -196,13 +201,15 @@ nav ul {
   line-height: 24px;
   color: #396df2;
   cursor: pointer;
+  transition: color 1s, background-color 1s, padding-left 1s, padding-right 1s;
 }
 
 .get-resume-btn input:hover,
 .project-details-btn input:hover {
   color: #fff;
   background: #396df2;
-  transition-duration: 0.4s;
+  padding-left: 6px;
+  padding-right: 18px;
 }
 
 .get-resume-btn input:active,
@@ -210,7 +217,7 @@ nav ul {
   color: #fff;
   background: #2230d2;
   border: 2px solid #2230d2;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
 }
 
 /** End: Work Section **/
@@ -437,6 +444,12 @@ fieldset button:active {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+    width: max-content;
+    transition: transform 2s;
+  }
+
+  .main h1:hover {
+    transform: translate(200px, -8px);
   }
 
   .main-section p {
