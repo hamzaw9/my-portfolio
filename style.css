@@ -120,6 +120,7 @@ nav ul {
 
 .card img {
   max-width: 100%;
+  transition: transform 0.5s linear;
 }
 
 .card-inner {
@@ -127,6 +128,10 @@ nav ul {
   flex-direction: column;
   gap: 20px;
   padding-right: 34px;
+}
+
+.card img:hover {
+  transform: scale(1.01);
 }
 
 .card-inner h2 {
@@ -438,11 +443,11 @@ fieldset button:active {
     font-size: 48px;
     line-height: 60px;
     width: max-content;
+    transition: transform 2s;
   }
 
   .main h1:hover {
-    transform: translate(170px, -8px);
-    transition: 2s;
+    transform: translate(200px, -8px);
   }
 
   .main-section p {
