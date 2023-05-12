@@ -202,7 +202,7 @@ nav ul {
 .project-details-btn input:hover {
   color: #fff;
   background: #396df2;
-  transition-duration: 0.4s;
+  transition: 0.5s;
 }
 
 .get-resume-btn input:active,
@@ -210,7 +210,7 @@ nav ul {
   color: #fff;
   background: #2230d2;
   border: 2px solid #2230d2;
-  transition-duration: 0.4s;
+  transition-duration: 0.5s;
 }
 
 /** End: Work Section **/
@@ -437,6 +437,12 @@ fieldset button:active {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
+    width: max-content;
+  }
+
+  .main h1:hover {
+    transform: translate(170px, -8px);
+    transition: 2s;
   }
 
   .main-section p {
