@@ -56,6 +56,8 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 - [Live Demo Link](https://hamzaw9.github.io/my-portfolio/)
 
+- [Project presentation: video demo](https://www.loom.com/share/76f3d9ce08f245cabba90af8436c20d7)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
