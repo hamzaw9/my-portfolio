@@ -31,11 +31,44 @@ body {
   text-decoration: none;
 }
 
+.hamburger {
+  display: block;
+  cursor: none;
+  position: absolute;
+  right: 13%;
+  top: 4%;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 4px auto;
+  border-radius: 10%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(96, 112, 255, 1);
+}
+
+.hamburger:active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger:active .bar:nth-child(1) {
+  transform: translate(8px) rotate(45deg);
+}
+
+.hamburger:active .bar:nth-child(3) {
+  transform: translate(-8px) rotate(-45deg);
+}
+
+
 .nav-desk {
   display: none;
 }
 
 .nav-mbl {
+  display: none;
   z-index: 9;
   background-color: #6070ff;
   width: 100%;
@@ -44,7 +77,7 @@ body {
   top: 0;
   left: 0;
   mix-blend-mode: multiply;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 
 .nav-mbl ul {
@@ -52,8 +85,10 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  padding-top: 5rem;
+  padding-left: 2rem;
   flex-direction: column;
-  gap: 40px;
+  gap: 18px;
 }
 
 .nav-mbl li {
@@ -62,6 +97,10 @@ body {
 
 .nav-mbl li a {
   text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 /** End: header Section **/
@@ -423,6 +462,10 @@ fieldset button:active {
   }
 
   .header i {
+    display: none;
+  }
+
+  .hamburger {
     display: none;
   }
 
