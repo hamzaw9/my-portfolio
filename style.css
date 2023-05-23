@@ -50,25 +50,22 @@ body {
   background-color: rgba(96, 112, 255, 1);
 }
 
-.hamburger:active .bar:nth-child(2) {
-  opacity: 0;
+.hamburger:active {
+  transform: scale(0.8);
 }
-
-.hamburger:active .bar:nth-child(1) {
-  transform: translate(8px) rotate(45deg);
-}
-
-.hamburger:active .bar:nth-child(3) {
-  transform: translate(-8px) rotate(-45deg);
-}
-
 
 .nav-desk {
   display: none;
 }
 
+.close-btn {
+  padding-left: 80%;
+  padding-top: 10%;
+  margin-bottom: -3rem;
+}
+
 .nav-mbl {
-  display: none;
+  visibility: visible;
   z-index: 9;
   background-color: #6070ff;
   width: 100%;
@@ -78,6 +75,11 @@ body {
   left: 0;
   mix-blend-mode: multiply;
   backdrop-filter: blur(10px);
+}
+
+.nav-mbl-inactive {
+  display: none;
+  position: fixed;
 }
 
 .nav-mbl ul {
