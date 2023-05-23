@@ -39,6 +39,10 @@ body {
   top: 4%;
 }
 
+.hamburger:hover {
+  cursor: pointer;
+}
+
 .bar {
   display: block;
   width: 24px;
@@ -103,6 +107,12 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  transition: 0.5s;
+}
+
+.nav-mbl li a:hover {
+  background-color: #7c88f5;
+  padding-left: 15px;
 }
 
 /** End: header Section **/
