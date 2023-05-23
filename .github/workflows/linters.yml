@@ -6,6 +6,18 @@ env:
   FORCE_COLOR: 1
 
 jobs:
+  eslint:
+  name: ESLint
+  runs-on: ubuntu-22.04
+  steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: "18.x"
+    - name: Setup ESLint
+      run: npm install --save-dev eslint@7.x eslint-config-standard@16.x eslint-plugin-import@2.x eslint-plugin-node@11.x eslint-plugin-promise@4.x eslint-plugin-standard@5.x
+    - name: ESLint Report
+      run: npx eslint .
   lighthouse:
     name: Lighthouse
     runs-on: ubuntu-22.04
