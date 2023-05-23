@@ -71,6 +71,10 @@ body {
   margin-bottom: -3rem;
 }
 
+.close-btn:hover {
+  cursor: pointer;
+}
+
 .nav-mbl {
   visibility: visible;
   z-index: 9;
