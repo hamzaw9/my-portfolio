@@ -575,7 +575,14 @@ fieldset button:active {
     flex-direction: row-reverse;
   }
 
+  .card img {
+    max-width: 100%;
+    width: 47%;
+  }
+
   .card-inner {
+    max-width: 100%;
+    width: 47%;
     padding: 24px;
     gap: 24px;
   }
