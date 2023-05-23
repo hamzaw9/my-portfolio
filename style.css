@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -53,9 +53,8 @@ body {
   height: 3px;
   margin: 4px auto;
   border-radius: 10%;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: rgba(96, 112, 255, 1);
+  background-color: #396df2;
 }
 
 .hamburger:active {
@@ -105,6 +104,10 @@ body {
   list-style-type: none;
 }
 
+.social-media li a {
+  text-decoration: none;
+}
+
 .nav-mbl li a {
   text-decoration: none;
   color: #fff;
@@ -124,7 +127,7 @@ body {
 /** Start: main Section **/
 
 .main {
-  background: url(images/main-background.svg);
+  background: url("images/main-background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -136,7 +139,7 @@ body {
   justify-content: center;
   gap: 8px;
   height: 100vh;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .main h1 {
@@ -177,10 +180,6 @@ body {
 
 .social-media li {
   list-style-type: none;
-}
-
-.social-media a {
-  text-decoration: none;
 }
 
 /** End: main Section **/
@@ -365,7 +364,7 @@ body {
 }
 
 .form-wrapper {
-  background-image: url(images/contact-form-background.svg);
+  background-image: url("images/contact-form-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #6070ff;
@@ -461,7 +460,7 @@ fieldset button:active {
 
 /** Start: Desktop header section **/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (width >= 768px) {
   .wrapper {
     margin-bottom: 114px;
     border-bottom-left-radius: 120px;
@@ -522,7 +521,7 @@ fieldset button:active {
   /** Start: Desktop Main section **/
 
   .main {
-    background-image: url(images/main-bg-desktop.svg);
+    background-image: url("images/main-bg-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -645,11 +644,11 @@ fieldset button:active {
 
   .form-wrapper {
     border-top-left-radius: 120px;
-    background-image: url(images/desktop-contact-bg.svg);
+    background-image: url("images/desktop-contact-bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 142px 400px 127px 400px;
+    padding: 142px 400px 127px;
   }
 
   .finish-line {
