@@ -12,26 +12,41 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Portfolio</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- Start: Header -->
-      <header class="header container">
+      <nav class="header container">
         <a class="logo" href="#">My Logo</a>
-        <nav>
-          <i class="fa-solid fa-bars"></i>
+        <a href="#" class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-mbl nav-mbl-inactive">
+          <div class="close-btn">
+            <img src="/images/Icon-Cancel.svg" alt="cancel icon" />
+          </div>
           <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portfolio" class="menu1">Portfolio</a></li>
+            <li><a href="#about-section" class="menu2">About</a></li>
+            <li><a href="#contact-section" class="menu3">Contact</a></li>
           </ul>
-        </nav>
-      </header>
+        </div>
+        <div class="nav-desk">
+          <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <!-- End: Header -->
 
       <!-- Start: Main Section-->
-      <section class="main">
+      <section id="portfolio" class="main">
         <div class="main-section">
           <h1>I’m Hamza Baig. <span>Glad to see you!</span></h1>
           <p>
@@ -173,7 +188,7 @@
 
     <!-- Start: About Section-->
 
-    <section class="about">
+    <section id="about-section" class="about">
       <div class="about-left">
         <h2>About Myself</h2>
         <p>
@@ -250,7 +265,7 @@
     <!-- End: About Section-->
 
     <!-- Start: Contact Form-->
-    <section class="form-holder">
+    <section id="contact-section" class="form-holder">
       <div class="form-wrapper">
         <div class="form-description">
           <h2>Contact me</h2>

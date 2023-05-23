@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   background-color: #e5e5e5;
 }
 
@@ -31,8 +35,94 @@ body {
   text-decoration: none;
 }
 
-nav ul {
+.hamburger {
+  display: block;
+  cursor: none;
+  position: absolute;
+  right: 13%;
+  top: 4%;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 4px auto;
+  border-radius: 10%;
+  transition: all 0.3s ease-in-out;
+  background-color: #396df2;
+}
+
+.hamburger:active {
+  transform: scale(0.8);
+}
+
+.nav-desk {
   display: none;
+}
+
+.close-btn {
+  padding-left: 80%;
+  padding-top: 10%;
+  margin-bottom: -3rem;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.nav-mbl {
+  visibility: visible;
+  z-index: 9;
+  background-color: #6070ff;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+}
+
+.nav-mbl-inactive {
+  display: none;
+  position: fixed;
+}
+
+.nav-mbl ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav-mbl li {
+  list-style-type: none;
+}
+
+.social-media li a {
+  text-decoration: none;
+}
+
+.nav-mbl li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  transition: 0.5s;
+}
+
+.nav-mbl li a:hover {
+  padding-left: 13px;
 }
 
 /** End: header Section **/
@@ -40,7 +130,7 @@ nav ul {
 /** Start: main Section **/
 
 .main {
-  background: url(images/main-background.svg);
+  background: url("images/main-background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,7 +142,7 @@ nav ul {
   justify-content: center;
   gap: 8px;
   height: 100vh;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px;
 }
 
 .main h1 {
@@ -93,10 +183,6 @@ nav ul {
 
 .social-media li {
   list-style-type: none;
-}
-
-.social-media a {
-  text-decoration: none;
 }
 
 /** End: main Section **/
@@ -281,7 +367,7 @@ nav ul {
 }
 
 .form-wrapper {
-  background-image: url(images/contact-form-background.svg);
+  background-image: url("images/contact-form-background.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #6070ff;
@@ -377,7 +463,7 @@ fieldset button:active {
 
 /** Start: Desktop header section **/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (width >= 768px) {
   .wrapper {
     margin-bottom: 114px;
     border-bottom-left-radius: 120px;
@@ -397,18 +483,30 @@ fieldset button:active {
     display: none;
   }
 
-  nav ul {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-mbl {
+    display: none;
+  }
+
+  .nav-desk {
+    display: block;
+  }
+
+  .nav-desk ul {
     margin: 0;
     padding: 0;
     display: flex;
     gap: 32px;
   }
 
-  nav li {
+  .nav-desk li {
     list-style-type: none;
   }
 
-  nav a {
+  .nav-desk a {
     text-decoration: none;
     color: #344563;
     font-weight: 500;
@@ -417,7 +515,7 @@ fieldset button:active {
     padding: 8px;
   }
 
-  nav a:hover {
+  .nav-desk a:hover {
     color: #6070ff;
   }
 
@@ -426,7 +524,7 @@ fieldset button:active {
   /** Start: Desktop Main section **/
 
   .main {
-    background-image: url(images/main-bg-desktop.svg);
+    background-image: url("images/main-bg-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -479,7 +577,14 @@ fieldset button:active {
     flex-direction: row-reverse;
   }
 
+  .card img {
+    max-width: 100%;
+    width: 47%;
+  }
+
   .card-inner {
+    max-width: 100%;
+    width: 47%;
     padding: 24px;
     gap: 24px;
   }
@@ -542,11 +647,11 @@ fieldset button:active {
 
   .form-wrapper {
     border-top-left-radius: 120px;
-    background-image: url(images/desktop-contact-bg.svg);
+    background-image: url("images/desktop-contact-bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 142px 400px 127px 400px;
+    padding: 142px 400px 127px;
   }
 
   .finish-line {
