@@ -234,16 +234,16 @@ body {
   color: #7a869a;
 }
 
-.card-inner strong {
+p strong {
   color: #344563;
 }
 
-.card-inner i {
-  color: #c1c7d0;
-  margin: 0 4px;
+.fa-solid {
+  color: #7a869a;
+  margin: 0 5px;
 }
 
-.card-inner p.detail {
+.card-inner p.project-description {
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
@@ -271,13 +271,13 @@ body {
 
 /** work & about section input type="button" same style **/
 
-.project-details-btn,
-.get-resume-btn {
+.project-details-btn {
   display: flex;
+  gap: 12px;
 }
 
 .get-resume-btn input,
-.project-details-btn input {
+.project-details-btn button {
   padding: 12px;
   background: #fff;
   border: 2px solid #396df2;
@@ -291,7 +291,7 @@ body {
 }
 
 .get-resume-btn input:hover,
-.project-details-btn input:hover {
+.project-details-btn button:hover {
   color: #fff;
   background: #396df2;
   padding-left: 6px;
@@ -299,7 +299,7 @@ body {
 }
 
 .get-resume-btn input:active,
-.project-details-btn input:active {
+.project-details-btn button:active {
   color: #fff;
   background: #2230d2;
   border: 2px solid #2230d2;
@@ -356,6 +356,10 @@ body {
   padding-right: 150px;
   margin-bottom: 8px;
   gap: 8px;
+}
+
+.get-resume-btn {
+  display: flex;
 }
 
 /** End: About Section **/
@@ -458,6 +462,34 @@ fieldset button:active {
 }
 
 /** End: Contact Form **/
+
+/** Start: Popup Window **/
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.close-project-details {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-close-btn {
+  display: none;
+}
+
+.project-name i {
+  color: #67798E;
+}
+
+/** End: Popup Window **/
 
 /*****     Media Queries     *****/
 
