@@ -120,11 +120,10 @@ document.addEventListener('DOMContentLoaded', () => {
   .finally(()=> {
     /***** Start: Popup Window *****/ 
   
-    const card = document.querySelector('.card');
-    const cardInner = document.querySelector('.card-inner');
-    const image = document.querySelector('.card img');
-    const detailParagraph = document.querySelector('.card .project-description');
-    const projectName = document.querySelector('.project-name');
+    
+    
+   
+    
     const seeProject = document.querySelectorAll('.see-project');
     for (let i = 0; i < seeProject.length; i++) {
         seeProject[i].addEventListener('click', function(event) {
@@ -135,13 +134,23 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector("#"+ projectId + " .project-description").innerText = projects[i]["long-description"];
           }
         }
-        document.querySelector('.card').classList.add('popup');
-        document.querySelector('.project-close-btn').style.display = 'block';
+        document.getElementById(projectId).classList.add('popup');
+        document.querySelector("#" + projectId + ' .project-close-btn').style.display = 'block';
+        const projectName = document.querySelector("#" + projectId + ' .project-name');
         projectName.style.display = 'flex';
         projectName.style.justifyContent = 'space-between';
         projectName.style.alignItems = 'center';
+        const cardInner = document.querySelector("#" + projectId + ' .card-inner');
+        const image = document.querySelector("#" + projectId + ' img');
+        const detailParagraph = document.querySelector("#" + projectId + ' .project-description');
         cardInner.style.padding = '0';
         cardInner.insertBefore(image, detailParagraph);
+        const seeProjectBtn = document.querySelector("#" + projectId + " .see-project");
+        seeProjectBtn.style.display = "none";
+        const seeLiveBtn = document.querySelector("#" + projectId + " .see-live");
+        seeLiveBtn.style.display = "block";
+        const seeSourceBtn = document.querySelector("#" + projectId + " .see-source");
+        seeSourceBtn.style.display = "block";
       });
     }
 
@@ -155,10 +164,19 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector("#"+ projectId + " .project-description").innerText = projects[i]["description"];   
           } 
         }
-        document.querySelector(".project-description").innerHTML.detailParagraph;
-        document.querySelector('.card').classList.remove('popup');
-        document.querySelector('.project-close-btn').style.display = 'none';
+        document.querySelector("#" + projectId + " .project-description").innerHTML.detailParagraph;
+        document.getElementById(projectId).classList.remove('popup');
+        document.querySelector("#" + projectId + ' .project-close-btn').style.display = 'none';
+        const cardInner = document.querySelector("#" + projectId + ' .card-inner');
+        const image = document.querySelector("#" + projectId + ' img');
+        const card = document.getElementById(projectId);
         card.insertBefore(image, cardInner)
+        const seeProjectBtn = document.querySelector("#" + projectId + " .see-project");
+        seeProjectBtn.style.display = "block";
+        const seeLiveBtn = document.querySelector("#" + projectId + " .see-live");
+        seeLiveBtn.style.display = "none";
+        const seeSourceBtn = document.querySelector("#" + projectId + " .see-source");
+        seeSourceBtn.style.display = "none";
     });
       
     }
