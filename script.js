@@ -117,7 +117,58 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle any errors that occur during the fetch request
     console.log("Error:", error);
   })
+  .finally(()=> {
+    /***** Start: Popup Window *****/ 
   
+    const card = document.querySelector('.card');
+    const cardInner = document.querySelector('.card-inner');
+    const image = document.querySelector('.card img');
+    const detailParagraph = document.querySelector('.card .project-description');
+    const projectName = document.querySelector('.project-name');
+    const seeProject = document.querySelectorAll('.see-project');
+    for (let i = 0; i < seeProject.length; i++) {
+        seeProject[i].addEventListener('click', function(event) {
+        let projectId = event.target.parentElement.parentElement.parentElement.id;
+
+        for (let i = 0; i < projects.length; i++) {
+          if (projects[i].id === projectId) {
+            document.querySelector("#"+ projectId + " .project-description").innerText = projects[i]["long-description"];
+          }
+        }
+        document.querySelector('.card').classList.add('popup');
+        document.querySelector('.project-close-btn').style.display = 'block';
+        projectName.style.display = 'flex';
+        projectName.style.justifyContent = 'space-between';
+        projectName.style.alignItems = 'center';
+        cardInner.style.padding = '0';
+        cardInner.insertBefore(image, detailParagraph);
+      });
+    }
+
+    let closeBtn = document.querySelectorAll('.project-close-btn');
+    for (let i = 0; i < closeBtn.length; i++) {
+
+      closeBtn[i].addEventListener('click', function(event) {
+        let projectId = event.target.parentElement.parentElement.parentElement.id;
+        for (let i = 0; i < projects.length; i++) {
+          if (projects[i].id === projectId) {
+            document.querySelector("#"+ projectId + " .project-description").innerText = projects[i]["description"];   
+          } 
+        }
+        document.querySelector(".project-description").innerHTML.detailParagraph;
+        document.querySelector('.card').classList.remove('popup');
+        document.querySelector('.project-close-btn').style.display = 'none';
+        card.insertBefore(image, cardInner)
+    });
+      
+    }
+      
+      
+    }
+    
+
+    /***** End: Popup Window *****/
+  )
   ;
 
   
