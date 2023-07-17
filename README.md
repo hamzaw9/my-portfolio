@@ -52,12 +52,6 @@ The goal of this project is to create a visually appealing portfolio that showca
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://hamzaw9.github.io/portfolio/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 1. Go to this URL link: https://github.com/hamzaw9/my-portfolio
